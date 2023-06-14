@@ -6,7 +6,7 @@ Feature: Ingreso de un usuario a la pagina Beta testin
 
   Scenario: Ingreso exitoso de un usuario
     Given que el usuario se encuentra registrado en la pagina Beta Testin
-    When inicia secion de manera correcta
+    When inicia sesion de manera correcta
     Then se visualizara en la pagina el nombre del usuario
 
   Scenario Outline: ingreso fallido a la pagina por no diligenciar algun campo obligatorio
@@ -23,7 +23,7 @@ Feature: Ingreso de un usuario a la pagina Beta testin
   Scenario Outline: ingreso fallido a la pagina por usuario o contrasena incorrecta
     Given que el usuario se encuentra registrado en la pagina Beta Testin
     When diligencia los campos del formulario de loguin de forma incorrecta "<equivocacion>"
-    Then recibo un mensaje indicando el campo esta iniciando seccion de manera incorrecta
+    Then recibo un mensaje indicando que esta iniciando sesion de manera incorrecta
     Examples:
       |   equivocacion         |
       |      usuario           |
